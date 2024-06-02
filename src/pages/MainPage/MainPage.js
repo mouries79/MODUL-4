@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; // useState ve useEffect eklenmeli
+import React, { useState, useEffect } from 'react'; 
 import './MainPage.css';
 import Header from '../../Companents/Header/Header';
 import SearchBox from '../../Companents/SearchBox/SearchBox';
@@ -6,8 +6,8 @@ import Movies from '../../Companents/Movies/Movies';
 import Favorites from '../../Companents/Favorites/Favorites';
 
 function MainPage() {
-    const [movies, setMovies] = useState([]); // useState eklenmeli
-    const [searchValue, setSearchValue] = useState(""); // useState eklenmeli
+    const [movies, setMovies] = useState([]); 
+    const [searchValue, setSearchValue] = useState("");
 
     const api_key = "7fbe6f8";
     let url = `https://www.omdbapi.com/?i=tt3896198&apikey=${api_key}&s=${searchValue}`;
